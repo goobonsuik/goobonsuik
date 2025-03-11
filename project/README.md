@@ -23,3 +23,4 @@ If you are developing a production application, we recommend using TypeScript an
 네비 다같이 움직이는거 수정
 레이아웃 애니메이션
 갤러리 구성
+모바일 버전
