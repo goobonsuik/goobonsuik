@@ -2,10 +2,10 @@ import { useState } from "react";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
-import Main from './pages/Main.js';
-import Introduce from './pages/Introduce.js/index.js'; 
-import Project from './pages/Project.js/index.js';
-import Painting from './pages/Painting.js/index.js';
+import Main from './pages/Main.jsx';
+import Introduce from './pages/Introduce.jsx'; 
+import Project from './pages/Project.jsx';
+import Painting from './pages/Painting.jsx';
 
 function App() {
   return (
