@@ -1,23 +1,31 @@
 import React from 'react';
 import { useLocation, useNavigate, Outlet } from 'react-router-dom';
 
-// import styled, {css} from 'styled-components';
+import styled, {css} from 'styled-components';
 import S from '../styles/GlobalBlock.jsx';
 
-// import Nav from '../components/Nav.jsx';
+import Nav from '../components/Nav.jsx';
 
+const MainWrap = styled.div`
+  display: flex;
+  position: relative;
+`
 
-function Page(){
+const Section = styled.section`
+  width: calc( 100% - 12rem );
+`
+
+function Main(){
 
   return (
-    <div>
-      main
-      <div />
-      <div>
+    <MainWrap>
+      <Nav />
+      
+      <Section>
         <Outlet></Outlet>
-      </div>
-    </div>
+      </Section>
+    </MainWrap>
   )
 };
 
-export default Page;
+export default Main;

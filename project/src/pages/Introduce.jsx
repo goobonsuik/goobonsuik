@@ -4,17 +4,14 @@ import { useNavigate } from 'react-router-dom';
 
 // import styled from 'styled-components';
 
-function Main() {
+function Introduce() {
   const navigate = useNavigate();
 
   return (
     <div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
+      Introduce
     </div>
   )
 };
 
-export default Main;
+export default Introduce;
