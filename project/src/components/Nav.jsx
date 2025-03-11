@@ -21,16 +21,18 @@ const Insta = styled.p`
   align-item: center;
   text-align: center;
 `
-function Nav(){
+function Nav(){  
+  const navigate = useNavigate();
+
 
   return (
     <NavWrap>
-      <Icon></Icon>
+      <Icon onClick={()=>{navigate('/')}}></Icon>
 
       <ul>
-        <li>도우너</li>
-        <li>포트폴리오</li> 
-        <li>그림</li>
+        <li onClick={()=>{navigate('/')}}>도우너</li>
+        <li onClick={()=>{navigate('/project')}}>포트폴리오</li> 
+        <li onClick={()=>{navigate('/painting')}}>그림</li>
       </ul>
 
       <div>
