@@ -1,6 +1,5 @@
 /* eslint-disable */
 import {createGlobalStyle} from "styled-components";
-
 import OutfitMedium from '../fonts/Outfit-Medium.woff2';
 import OutfitLight from '../fonts/Outfit-Light.woff2';
 import Assistant from '../fonts/Assistant-Regular.woff2';

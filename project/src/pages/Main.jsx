@@ -12,7 +12,7 @@ const MainWrap = styled.div`
 `
 
 const Section = styled.section`
-  width: calc( 100% - 12rem );
+  width: calc( 100% - 300px );
 `
 
 function Main(){
