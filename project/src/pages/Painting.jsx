@@ -3,6 +3,7 @@ import { useLocation, useNavigate, Outlet } from 'react-router-dom';
 
 import styled, {css} from 'styled-components';
 import S from '../styles/GlobalBlock.jsx';
+// import paint from '../data/paintingInfo.jsx'
 
 
 
@@ -13,6 +14,7 @@ const GridItem = styled(S.GridItem)`
 
 function Painting(){
 
+  console.log('paint')
   return (
     <S.Wrap>
       <S.GridWrap gridColumns={'repeat(auto-fill, minmax(200px, auto))'}>

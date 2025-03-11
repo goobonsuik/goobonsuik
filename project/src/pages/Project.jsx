@@ -1,5 +1,12 @@
 import React from 'react';
 import { useLocation, useNavigate, Outlet } from 'react-router-dom';
+// import ReactPlayer from 'react-player'
+// import ReactPlayer from 'react-player/vimeo'
+// import ReactPlayer from 'react-player/lazy'
+import Vimeo from '@u-wave/react-vimeo';
+import data from '/public/data/data.json';
+
+
 
 import styled from 'styled-components';
 import S from '../styles/GlobalBlock.jsx';
@@ -9,6 +16,7 @@ const GridItem = styled(S.GridItem)`
 `
 
 function Project(){
+  console.log(data.project[0].url);
   return (
     <S.Wrap>
       <S.Block>
@@ -19,8 +27,27 @@ function Project(){
       </S.Block>
 
       <S.GridWrap>
-        <GridItem></GridItem>
-        <GridItem></GridItem>
+        
+        {/* <GridItem>
+          <ReactPlayer url='https://vimeo.com/1058476319' onReady playIcon={true}/>
+        </GridItem> */}
+        <GridItem>
+          <Vimeo
+            video="1058476319"
+            autoplay={true}
+            volume="0.1"
+            // background="true"
+            // controls="true"
+          />
+        </GridItem>
+        <GridItem>
+          <Vimeo
+            video="1058476352"
+            volume="0.1"
+            // background="true"
+            // controls="true"
+          />
+        </GridItem>
         <GridItem></GridItem>
         <GridItem></GridItem>
         <GridItem></GridItem>

@@ -1,0 +1,12 @@
+{
+    "navItem":[
+        { "name": "도우너", "cName": "내 소개"},
+        { "oName": "포트폴리오", "cName": "작업영상물"}
+    ],
+    "project":[
+        {"url":"https://vimeo.com/1058476319"}
+    ],
+    "painting":[
+        {}
+    ]
+}
