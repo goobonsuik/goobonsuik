@@ -33,7 +33,7 @@ function Introduce() {
       </Block>
 
       <Block>
-        <S.Gif wid={'150px'} hei={'150px'}></S.Gif>
+        <S.Gif $wid={'150px'} $hei={'150px'}></S.Gif>
       </Block>
     </S.Wrap>
   )
