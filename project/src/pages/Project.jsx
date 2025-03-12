@@ -8,31 +8,36 @@ import data from "/public/data/data.json";
 
 import styled from "styled-components";
 import S from "../styles/GlobalBlock.jsx";
+import media from "../styles/media.jsx";
 
+const GridWrap = styled(S.GridWrap)`
+gap: 50px 10px;
+`
 const GridItem = styled(S.GridItem)`
   width: 428px;
-  border: 1px solid #ddd;
+  // border: 1px solid #ddd;
+
+  ${media.mbl`
+  // border:3px solid #00f;
+
+  `}
+  ${media.tab`
+  // border:3px solid #0f0;
+
+  `}
+  ${media.desk`
+      // border:3px solid #f00;
+  `}
 `;
 
 function Project() {
   console.log(data.project[0].url);
   return (
     <S.Wrap>
-      <S.Block>
-        <S.Box>
-          작업에 썼던 bg와 더빙들은 혹여나 저작권으로 인해서 유튜브 무료 bg로
-          <br />
-          영상속도는 전반적으로 조금 빠르게 해서 편집되었어요~
-        </S.Box>
-        <S.Gif $wid={"200px"} $hei={"200px"}></S.Gif>
-      </S.Block>
-
-      <S.GridWrap>
+      <GridWrap>
         {data.project.map((item, idx) => {
           return (
-            <GridItem
-              key={idx}
-            >
+            <GridItem key={idx}>
               <Vimeo
                 video={item.url}
                 autoplay={true}
@@ -43,7 +48,7 @@ function Project() {
             </GridItem>
           );
         })}
-      </S.GridWrap>
+      </GridWrap>
     </S.Wrap>
   );
 }

@@ -12,7 +12,7 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     position: relative;
-    font-family: 'OutfitLight';
+    font-family: 'OutfitLight', 'NotoSans';
     // background-color: #edf2f6;
     // -ms-overflow-style: none;
   }

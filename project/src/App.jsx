@@ -3,8 +3,9 @@ import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 
-import styled from 'styled-components';
-import S from './styles/GlobalBlock.jsx';
+import styled from "styled-components";
+import S from "./styles/GlobalBlock.jsx";
+import media from "./styles/media.jsx";
 
 import Main from "./pages/Main.jsx";
 import About from "./pages/About.jsx";
@@ -12,25 +13,24 @@ import Project from "./pages/Project.jsx";
 import Painting from "./pages/Painting.jsx";
 import Work from "./pages/Work.jsx";
 import Header from "./components/Header.jsx";
+import Footer from "./components/Footer.jsx";
 
-const Wrap = styled(S.Wrap)`
-  // display: flex;
-  // padding: 0 50px;
-`
 function App() {
   return (
     <BrowserRouter>
-      <Wrap>
+      <S.Container>
         <Header />
 
         <Routes>
           <Route path="/" element={<About />} />
-          <Route path="/work" element={<Work />} />
-
-          <Route path="project" element={<Project />} />
-          <Route path="painting" element={<Painting />} />
+          <Route path="/work" element={<Work />}>
+            <Route path="/work" element={<Project />} />
+            <Route path="painting" element={<Painting />} />
+          </Route>
         </Routes>
-      </Wrap>
+      
+        <Footer />
+      </S.Container>
     </BrowserRouter>
   );
 }
