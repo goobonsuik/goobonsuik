@@ -7,24 +7,28 @@ import styled from 'styled-components';
 import S from './styles/GlobalBlock.jsx';
 
 import Main from "./pages/Main.jsx";
+import About from "./pages/About.jsx";
 import Project from "./pages/Project.jsx";
 import Painting from "./pages/Painting.jsx";
-import Nav from "./components/Nav.jsx";
+import Work from "./pages/Work.jsx";
+import Header from "./components/Header.jsx";
 
 const Wrap = styled(S.Wrap)`
-  display: flex;
+  // display: flex;
+  // padding: 0 50px;
 `
 function App() {
   return (
     <BrowserRouter>
       <Wrap>
-        <Nav />
+        <Header />
+
         <Routes>
-          {/* <Route path="/" element={<Main />}> */}
-          <Route path="/" element={<Main />} />
+          <Route path="/" element={<About />} />
+          <Route path="/work" element={<Work />} />
+
           <Route path="project" element={<Project />} />
           <Route path="painting" element={<Painting />} />
-          {/* </Route> */}
         </Routes>
       </Wrap>
     </BrowserRouter>
