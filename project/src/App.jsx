@@ -2,21 +2,31 @@ import { useState } from "react";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
-import Main from './pages/Main.jsx';
-import Introduce from './pages/Introduce.jsx'; 
-import Project from './pages/Project.jsx';
-import Painting from './pages/Painting.jsx';
 
+import styled from 'styled-components';
+import S from './styles/GlobalBlock.jsx';
+
+import Main from "./pages/Main.jsx";
+import Project from "./pages/Project.jsx";
+import Painting from "./pages/Painting.jsx";
+import Nav from "./components/Nav.jsx";
+
+const Wrap = styled(S.Wrap)`
+  display: flex;
+`
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Main />}>
-          <Route path="/" element={<Introduce />} />
+      <Wrap>
+        <Nav />
+        <Routes>
+          {/* <Route path="/" element={<Main />}> */}
+          <Route path="/" element={<Main />} />
           <Route path="project" element={<Project />} />
           <Route path="painting" element={<Painting />} />
-        </Route>
-      </Routes>
+          {/* </Route> */}
+        </Routes>
+      </Wrap>
     </BrowserRouter>
   );
 }
