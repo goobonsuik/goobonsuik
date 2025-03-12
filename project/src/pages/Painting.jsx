@@ -31,12 +31,6 @@ function Painting(){
             </GridItem>
           )})
         }
-        <GridItem></GridItem>
-        <GridItem></GridItem>
-        <GridItem></GridItem>
-        <GridItem></GridItem>
-        <GridItem></GridItem>
-        <GridItem></GridItem>
       </S.GridWrap>
     </S.Wrap>
   )
