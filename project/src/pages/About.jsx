@@ -41,7 +41,7 @@ const About = () => {
 
           <S.Box>
             <S.Gif
-              $bg={"/images/main.gif"}
+              $bg={"/goobonsuik/project/dist/images/main.gif"}
               $wid={"400px"}
               $hei={"400px"}
             ></S.Gif>
