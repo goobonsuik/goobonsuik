@@ -50,7 +50,7 @@ const About = () => {
       </Section>
 
       <Block>
-        <S.Gif $bg={"/images/main02.gif"} $wid={"150px"} $hei={"150px"}></S.Gif>
+        <S.Gif $bg={"/goobonsuik/project/dist/images/main02.gif"} $wid={"150px"} $hei={"150px"}></S.Gif>
       </Block>
     </S.Wrap>
   );
