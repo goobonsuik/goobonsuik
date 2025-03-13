@@ -29,3 +29,14 @@ If you are developing a production application, we recommend using TypeScript an
 https://www.joshuamccartney.com/
 
 레이아웃 변경 중
+
+
+
+--- 3.13
+빌드하고 나서 이미지 경로가 꼬임.
+url 도 좀 더 봐야함.
+
+비디오 수정하고, 애니메이션 추가.
+갤러리 구성, 모바일 버전.
+파비콘 변경.
+네비 스타일 수정
