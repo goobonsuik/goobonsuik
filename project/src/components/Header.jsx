@@ -25,7 +25,7 @@ const Inner = styled.div`
 const Icon = styled.div`
   width: 88px;
   height: 88px;
-  background-image: url("/images/logo.jpg");
+  background-image: url("/goobonsuik/project/dist/images/logo.jpg");
   background-size: contain;
   background-repeat: no-repeat;
 `;
